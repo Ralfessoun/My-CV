@@ -1,10 +1,11 @@
 import React from 'react';
 import './Header.css';
+import SignatureAnimation from './SignatureAnimation';
 
 function Header() {
   return (
     <header className="header">
-{/*    <div className="logo">Jakub Maryška</div> */}
+      <div className="logo"><SignatureAnimation/></div>
       <nav className="nav">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
