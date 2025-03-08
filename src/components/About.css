@@ -1,0 +1,15 @@
+.about {
+    background-color: silver;
+    color: black;
+    padding: 50px;
+}
+
+.about h2 {
+    color: black;
+}
+
+@media (max-width: 600px) {
+    .about {
+        padding: 20px;
+    }
+}

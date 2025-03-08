@@ -11,14 +11,23 @@
   z-index: 100;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap; /* Allow items to wrap if needed */
+  height: 50px;
 }
 
 .logo {
-  font-size: 0.8rem; /* Smaller font size */
-  font-weight: bold;
-  color: #000000; /* black text */
-  flex: 1; /* Allow logo to take available space */
-  max-width: 200px; /* Limit the maximum width of the logo */
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  flex: 1;
+  max-width: 200px; 
+  margin-top: 5px;
+}
+
+.logo img {
+  width: 40px; /* Set the width of the logo */
+  height: 40px; /* Set the height of the logo */
+  border-radius: 100%; /* Make the logo round */
+  box-shadow: 0px 0px 4px white;
 }
 
 .nav, .social {
@@ -49,6 +58,10 @@
 
 .social a:hover {
   color: #007bff;
+}
+
+.separator {
+  color: white; /* Set separator color to white */
 }
 
 /* Responsive adjustments */

@@ -1,0 +1,15 @@
+.experience {
+    background-color: white;
+    color: black;
+    padding: 50px;
+}
+
+.experience h2 {
+    color: blue;
+}
+
+@media (max-width: 600px) {
+    .experience {
+        padding: 20px;
+    }
+}

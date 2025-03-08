@@ -1,5 +1,8 @@
 /* App.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+
 /* Basic Reset */
 * {
   margin: 0;
@@ -9,9 +12,9 @@
 
 /* Global Styles */
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Roboto Mono' , monospace;
   color: #000; /* black text */
-  background-color: #fff; /* white background */
+  background-color: silver; /* #fffbf6; */
   line-height: 1.6;
   text-align: center;
 }
@@ -23,7 +26,7 @@ a {
 
 /* Main App Container */
 .App {
-  padding-top: 80px; /* account for fixed header height */
+  padding-top: 50px; /* account for fixed header height */
 }
 
 /* Section Spacing */

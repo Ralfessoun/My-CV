@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 5px 0;
+    margin-top: 5px;
   }
   
   /* Common animation for all paths */
@@ -11,45 +11,47 @@
     stroke-dasharray: 500; /* Adjust based on each path's length */
     stroke-dashoffset: 500;
     animation: drawSignature 3s linear forwards;
+    stroke-linecap: round;
+    stroke-linejoin: round;
   }
   
   /* Stagger animations for each path */
   #signature .signature-path:nth-child(1) {
-    animation-delay: 0s;
-    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-duration: 0.7s;
   }
   #signature .signature-path:nth-child(2) {
-    animation-delay: 0.7s; /* Adjust delay as needed */
-    animation-duration: 1s;
+    animation-delay: 1.3s; /* Adjust delay as needed */
+    animation-duration: 0.7s;
   }
   /* Add more nth-child selectors if you have more strokes */
   #signature .signature-path:nth-child(3) {
-    animation-delay: 1s; /* Adjust delay as needed */
-    animation-duration: 1.7s;
+    animation-delay: 1.4s; /* Adjust delay as needed */
+    animation-duration: 0.7s;
   }
   #signature .signature-path:nth-child(4) {
-    animation-delay: 1.7s; /* Adjust delay as needed */
-    animation-duration: 1.7s;
+    animation-delay: 1.6s; /* Adjust delay as needed */
+    animation-duration: 1s;
   }
   #signature .signature-path:nth-child(5) {
-    animation-delay: 2.3s; /* Adjust delay as needed */
-    animation-duration: 1.5s;
+    animation-delay: 1.9s; /* Adjust delay as needed */
+    animation-duration: 0.7s;
   }
   #signature .signature-path:nth-child(6) {
-    animation-delay: 3.2s; /* Adjust delay as needed */
-    animation-duration: 1.5s;
+    animation-delay: 2.1s; /* Adjust delay as needed */
+    animation-duration: 0.7s;
   }
   #signature .signature-path:nth-child(7) {
-    animation-delay: 3.5s; /* Adjust delay as needed */
-    animation-duration: 1.5s;
+    animation-delay: 2.2s; /* Adjust delay as needed */
+    animation-duration: 0.7s;
   }
   #signature .signature-path:nth-child(8) {
-    animation-delay: 4s; /* Adjust delay as needed */
-    animation-duration: 1.2s;
+    animation-delay: 2.4s; /* Adjust delay as needed */
+    animation-duration: 0.7s;
   }
   #signature .signature-path:nth-child(9) {
-    animation-delay: 2.8s; /* Adjust delay as needed */
-    animation-duration: 0.8s;
+    animation-delay: 2.6s; /* Adjust delay as needed */
+    animation-duration: 0.7s;
   }    
   @keyframes drawSignature {
     to {
