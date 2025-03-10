@@ -2,18 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: black;
   padding: 50px;
   text-align: center;
   height: 30vh;
 }
-
-/*  this was inside .hero
-    background-image: url('../assets/hero-background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-*/
 
 .hero-left,
 .hero-right {
@@ -24,8 +16,6 @@
 }
 
 .hero-content h1 {
-  cursor: pointer;
-  color: black;
   font-size: 6em;
   margin: 0;
   white-space: nowrap;
@@ -35,7 +25,6 @@
 }
 
 .hero-content p {
-    color: black;
     font-size: 1.5em;
     margin: 10px 0 0;
     white-space: nowrap;
@@ -55,15 +44,41 @@
 }
 
 @media (max-width: 600px) {
-    .hero {
-        padding: 20px;
-    }
+  .hero {
+    padding: 20px;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+  }
 
-    .hero-content h1 {
-        font-size: 3em;
-    }
+  .hero-content h1 {
+    font-size: 3em;
+    padding-top: 30px;
+    white-space: normal; /* Allow text to wrap */
+    overflow: visible; /* Ensure text is visible */
+    text-align: center; /* Center the text */
+  }
 
-    .hero-content p {
-        font-size: 1em;
-    }
+  .hero-content p {
+    font-size: 1em;
+    white-space: normal; /* Allow text to wrap */
+    overflow: visible; /* Ensure text is visible */
+    text-align: center; /* Center the text */
+    animation: none; /* Disable animation on smaller screens if needed */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 4em;
+    white-space: normal; /* Allow text to wrap */
+    overflow: visible; /* Ensure text is visible */
+    text-align: center; /* Center the text */
+  }
+
+  .hero-content p {
+    font-size: 1.2em;
+    white-space: normal; /* Allow text to wrap */
+    overflow: visible; /* Ensure text is visible */
+    text-align: center; /* Center the text */
+  }
 }

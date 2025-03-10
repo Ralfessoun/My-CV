@@ -8,6 +8,11 @@
 .skills h2 {
   font-size: 2em;
   margin-bottom: 20px;
+  color: black;
+}
+
+.skills h3 {
+  color: black;
 }
 
 .skills-list {
@@ -37,8 +42,6 @@
     background-color: #007bff;
     border-radius: 5px;
 }
-
-
 
 @media (max-width: 600px) {
   .skills {

@@ -68,3 +68,18 @@
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 600px) {
+  .header {
+    padding: 15px 20px;
+  }
+  .nav a, .social a {
+    margin: 0 5px;
+    font-size: 0.9rem;
+  }
+
+  .social {
+    justify-content: flex-end; /* Align social links to the right */
+    width: 100%; /* Ensure it takes up the full width */
+  }
+}

@@ -23,8 +23,7 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none;;
 }
 
 /* Main App Container */
@@ -39,12 +38,14 @@ section {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
+  color : black;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 p {
   margin-bottom: 20px;
+  color : black;
 }
 
 /* Container Utility */
@@ -83,7 +84,40 @@ button:hover,
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+  body {
+    background-size: 100%; /* Adjust background size for smaller screens */
+    background-position: right top 20px; /* Adjust background position for smaller screens */
+    color: white;
+  }
+
   section {
     padding: 40px 15px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    padding-right: 20px; /* Add padding to avoid overlapping with the background image */
+    color: white;
+  }
+
+  p {
+    padding-right: 20px; /* Add padding to avoid overlapping with the background image */
+    color: white;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-size: 100px; /* Further adjust background size for very small screens */
+    background-position: right top 10px; /* Further adjust background position for very small screens */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em; /* Adjust font size for very small screens */
+    padding-right: 10px; /* Add padding to avoid overlapping with the background image */
+  }
+
+  p {
+    font-size: 1em; /* Adjust font size for very small screens */
+    padding-right: 10px; /* Add padding to avoid overlapping with the background image */
   }
 }

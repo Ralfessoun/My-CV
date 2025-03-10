@@ -9,6 +9,10 @@
     font-size: 2em;
 }
 
+.period, .experience h3, .description {
+ color: black;
+}
+
 @media (max-width: 600px) {
     .experience {
         padding: 20px;
