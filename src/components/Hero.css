@@ -1,58 +1,59 @@
 .hero {
-    background-image: url('../assets/hero-background.jpg');
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    color: black;
-    padding: 50 px;
-    text-align: center;
-    cursor: pointer;
-    height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding: 50px;
+  text-align: center;
+  height: 30vh;
 }
 
-/*
-.fuzzy-overlay {
-    position: absolute;
-    inset: -200%;
-    background-image: url('../assets/whitenoise.jpg');
-    opacity: 10%;
-    animation: shift 0.2s linear infinite both;
-    z-index: 1;
-}
+/*  this was inside .hero
+    background-image: url('../assets/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 */
+
+.hero-left,
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .hero-content h1 {
-    text-shadow: black 2px 2px 2px;
-    color: white;
-    font-size: 6em;
-    margin: 40px 0 0;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typewriter 4s steps(32, end), step-end infinite;
-    display: inline-block;
-
-  }
-  @keyframes typewriter {
-    from { width: 0; }
-    to { width: 100%; }
-  }
+  cursor: pointer;
+  color: black;
+  font-size: 6em;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+}
 
 .hero-content p {
-    text-shadow: black 2px 2px 2px;
-    color: white;
+    color: black;
     font-size: 1.5em;
     margin: 10px 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 3s steps(52, end), blinkingCursor 0.75s step-end infinite;
+    display: inline-block;
 }
-/*  
-  @keyframes shift {
-    0% {
-      transform: translateX(10%) translateY(10%);
-    }
-    100% {
-      transform: translateX(-10%) translateY(-10%);
-    }
-  }
-*/
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blinkingCursor {
+  from { border-right-color: white; }
+  to { border-right-color: transparent; }
+}
+
 @media (max-width: 600px) {
     .hero {
         padding: 20px;

@@ -1,8 +1,15 @@
 .contact {
-    background-color: silver;
     color: black;
     padding: 50px;
     text-align: center;
+}
+
+.contactbox {
+    background-color: silver;
+    border-radius: 1cm;
+    padding: 30px;
+    max-width: 600px; /* Set a maximum width for the contact box */
+    margin: 0 auto; /* Center the contact box */
 }
 
 .contact h2 {

@@ -13,6 +13,10 @@
 body {
   font-family: 'Roboto Mono' , monospace;
   color: #000; /* black text */
+  background-image: url('./assets/me.jpg');
+  background-size: 50%; /* Make the background image smaller */
+  background-repeat: no-repeat; 
+  background-position: right top 60px;
   background-color: silver; /* #fffbf6; */
   line-height: 1.6;
   text-align: center;

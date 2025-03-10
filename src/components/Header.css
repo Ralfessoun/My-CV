@@ -12,13 +12,12 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap; /* Allow items to wrap if needed */
   height: auto;
-  min-height: 50px;
+  min-height: 60px;
 }
 
 .logo {
   text-decoration: none;
   color: white;
-  font-size: 1rem;
   flex: 1;
   max-width: 200px; 
   display: flex;
@@ -47,7 +46,7 @@
   margin: 0 20px; /* Reduced margin */
   text-decoration: none;
   color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
