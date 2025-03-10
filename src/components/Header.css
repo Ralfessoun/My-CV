@@ -11,7 +11,8 @@
   z-index: 100;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap; /* Allow items to wrap if needed */
-  height: 50px;
+  height: auto;
+  min-height: 50px;
 }
 
 .logo {
@@ -20,7 +21,7 @@
   font-size: 1rem;
   flex: 1;
   max-width: 200px; 
-  margin-top: 5px;
+  display: flex;
 }
 
 .logo img {
@@ -30,13 +31,19 @@
   box-shadow: 0px 0px 4px white;
 }
 
-.nav, .social {
+.nav {
   display: flex;
   align-items: center;
   flex-wrap: wrap; /* Allow items to wrap */
 }
 
-.nav a {
+.social {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.nav a, .social a {
   margin: 0 20px; /* Reduced margin */
   text-decoration: none;
   color: white;
@@ -44,19 +51,7 @@
   transition: color 0.3s ease;
 }
 
-.nav a:hover {
-  color: #007bff;
-}
-
-.social a {
-  margin-left: 10px; /* Reduced margin */
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-.social a:hover {
+.nav a:hover, .social a:hover {
   color: #007bff;
 }
 

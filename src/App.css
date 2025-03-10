@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
-
 /* Basic Reset */
 * {
   margin: 0;
@@ -31,7 +30,7 @@ a {
 
 /* Section Spacing */
 section {
-  padding: 60px 20px;
+  padding: 0px 0px;
 }
 
 /* Typography */

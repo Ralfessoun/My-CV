@@ -19,6 +19,7 @@ function Header() {
       </nav>
       <div className="social">
         <a href="https://github.com/Ralfessoun" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span className="separator"> | </span>
         <a href="https://www.linkedin.com/in/ralfy/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </header>

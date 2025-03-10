@@ -1,0 +1,41 @@
+.experience-skills-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    margin-top: 50px;
+    align-items: stretch;
+
+  }
+  
+  .experience, .skills {
+    flex: 1;
+    max-width: 45%; /* Adjust the width as needed */
+    margin: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .about {
+      padding: 20px;
+    }
+  
+    .experience-skills-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .experience, .skills {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .experience-skills-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .experience, .skills {
+      max-width: 100%;
+    }
+  }
