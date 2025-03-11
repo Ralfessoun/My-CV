@@ -10,7 +10,7 @@
     flex: 1;
     max-width: 80%; /* Adjust the width as needed */
     margin: 10px;
-    border-radius: 1cm;
+    border-radius: 0.5cm;
   }
 
   .motion-div {

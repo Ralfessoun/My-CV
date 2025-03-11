@@ -1,16 +1,19 @@
 .experience {
-    background-color: white;
-    color: black;
+    background-color: var(--card-background-color);
     padding: 50px;
 }
 
 .experience h2 {
-    color: black;
+    color: var(--text-light-color);
     font-size: 2em;
 }
 
-.period, .experience h3, .description {
- color: black;
+.period, .description {
+    color: var(--text-light-color);
+}
+
+.experience h3 {
+    color: var(--text-color);
 }
 
 @media (max-width: 600px) {

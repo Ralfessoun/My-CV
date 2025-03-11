@@ -7,6 +7,7 @@ function Hero() {
 
   return (
     <motion.section 
+      id="hero"
       className="hero"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

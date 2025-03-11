@@ -9,21 +9,33 @@
   box-sizing: border-box;
 }
 
+/* Color Palette */
+:root {
+  --primary-color: #1E201E;
+  --secondary-color: #3C3D37;
+  --background-color: #b9b5af;
+  --text-color: #1E201E;
+  --text-light-color: #eeeae5;
+  --card-background-color: #363635;
+  --highlight-color: #697565;
+}
+
 /* Global Styles */
 body {
-  font-family: 'Roboto Mono' , monospace;
-  color: #000; /* black text */
+  font-family: 'Roboto Mono', monospace;
+  color: var(--text-color); /* Use text color variable */
   background-image: url('./assets/me.jpg');
   background-size: 50%; /* Make the background image smaller */
   background-repeat: no-repeat; 
   background-position: right top 60px;
-  background-color: silver; /* #fffbf6; */
+  background-color: var(--background-color); /* Use background color variable */
   line-height: 1.6;
   text-align: center;
 }
 
 a {
-  text-decoration: none;;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Main App Container */
@@ -33,19 +45,19 @@ a {
 
 /* Section Spacing */
 section {
-  padding: 0px 0px;
+  padding: 50px 0px;
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  color : black;
+  color: var(--text-color); /* Use text color variable */
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 p {
   margin-bottom: 20px;
-  color : black;
+  color: var(--text-color); /* Use text color variable */
 }
 
 /* Container Utility */
@@ -58,14 +70,6 @@ p {
 /* Utility Classes */
 .text-center {
   text-align: center;
-}
-
-/* Blue Accent for Interactive Elements */
-a:hover,
-button:hover,
-.nav a:hover,
-.social a:hover {
-  color: #007bff; /* blue accent */
 }
 
 /* Simple Fade-In Animation */
@@ -86,8 +90,8 @@ button:hover,
 @media (max-width: 768px) {
   body {
     background-size: 100%; /* Adjust background size for smaller screens */
-    background-position: right top 20px; /* Adjust background position for smaller screens */
-    color: white;
+    background-position: right top 80px; /* Adjust background position for smaller screens */
+    color: var(--text-light-color); /* Use light text color variable */
   }
 
   section {
@@ -96,28 +100,11 @@ button:hover,
 
   h1, h2, h3, h4, h5, h6 {
     padding-right: 20px; /* Add padding to avoid overlapping with the background image */
-    color: white;
+    color: var(--text-light-color); /* Use light text color variable */
   }
 
   p {
     padding-right: 20px; /* Add padding to avoid overlapping with the background image */
-    color: white;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    background-size: 100px; /* Further adjust background size for very small screens */
-    background-position: right top 10px; /* Further adjust background position for very small screens */
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-size: 1.5em; /* Adjust font size for very small screens */
-    padding-right: 10px; /* Add padding to avoid overlapping with the background image */
-  }
-
-  p {
-    font-size: 1em; /* Adjust font size for very small screens */
-    padding-right: 10px; /* Add padding to avoid overlapping with the background image */
+    color: var(--text-light-color); /* Use light text color variable */
   }
 }

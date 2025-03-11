@@ -1,5 +1,5 @@
 .contact {
-    color: black;
+    color: var(--text-color); /* Use text color variable */
     padding: 50px;
     text-align: center;
 }
@@ -13,19 +13,23 @@
 }
 
 .contactbox {
-    background-color: silver;
-    border-radius: 1cm;
+    background-color: var(--card-background-color); /* Use card background color variable */
+    border-radius: 0.5cm;
     padding: 30px;
     max-width: 600px; /* Set a maximum width for the contact box */
 }
 
 .contact h2 {
-    color: black;
+    color: var(--text-color); /* Use text color variable */
     font-size: 2em;
 }
 
 .contact p, .contact a {
-    color: black;
+    color: var(--text-light-color); /* Use text color variable */
+}
+
+.contact a:hover {
+    color: var(--highlight-color); /* Use primary color variable */
 }
 
 @media (max-width: 600px) {

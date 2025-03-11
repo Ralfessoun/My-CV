@@ -1,0 +1,64 @@
+.services {
+    padding: 50px;
+    color: var(--text-color); /* Use text color variable */
+    text-align: center;
+    background-color: var(--background-color); /* Use background color variable */
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 1cm;
+  }
+  
+  .services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--text-color); /* Use text color variable */
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  }
+  
+  .service-card {
+    background-color: var(--card-background-color); /* Use card background color variable */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px var(--card-shadow-color); /* Use card shadow color variable */
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-card i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--primary-color); /* Use primary color variable */
+  }
+  
+  .service-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--text-color); /* Use text color variable */
+  }
+  
+  .service-card p {
+    font-size: 1em;
+    color: var(--text-light-color); /* Use light text color variable */
+  }
+  
+  @media (max-width: 768px) {
+    .service-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-card {
+      max-width: 90%;
+    }
+  }

@@ -25,12 +25,12 @@
 }
 
 .hero-content p {
-    font-size: 1.5em;
-    margin: 10px 0 0;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typewriter 3s steps(52, end), blinkingCursor 0.75s step-end infinite;
-    display: inline-block;
+  font-size: 1.5em;
+  margin: 10px 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 3s steps(52, end), blinkingCursor 0.75s step-end infinite;
+  display: inline-block;
 }
 
 @keyframes typewriter {
@@ -39,7 +39,7 @@
 }
 
 @keyframes blinkingCursor {
-  from { border-right-color: white; }
+  from { border-right-color: var(--text-color); /* Use text color variable */ }
   to { border-right-color: transparent; }
 }
 
@@ -52,7 +52,6 @@
 
   .hero-content h1 {
     font-size: 3em;
-    padding-top: 30px;
     white-space: normal; /* Allow text to wrap */
     overflow: visible; /* Ensure text is visible */
     text-align: center; /* Center the text */

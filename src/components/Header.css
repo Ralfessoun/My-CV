@@ -4,30 +4,35 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
-  background-color: #000;
+  background-color: var(--primary-color); /* Use primary color variable */
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px var(--card-shadow-color); /* Use card shadow color variable */
   flex-wrap: wrap; /* Allow items to wrap if needed */
   height: auto;
   min-height: 60px;
 }
 
+.logo a {
+  color: var(--text-light-color);
+  font-size: 1.1rem;
+}
+
 .logo {
   text-decoration: none;
-  color: white;
   flex: 1;
-  max-width: 200px; 
+  max-width: fit-content; 
   display: flex;
+  align-items: center;
+  margin: 0 50px;
 }
 
 .logo img {
   width: 40px; /* Set the width of the logo */
   height: 40px; /* Set the height of the logo */
   border-radius: 100%; /* Make the logo round */
-  box-shadow: 0px 0px 4px white;
 }
 
 .nav {
@@ -45,17 +50,17 @@
 .nav a, .social a {
   margin: 0 20px; /* Reduced margin */
   text-decoration: none;
-  color: white;
+  color: var(--text-light-color); /* Use light text color variable */
   font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
-.nav a:hover, .social a:hover {
-  color: #007bff;
+.nav a:hover, .social a:hover, .logo a:hover {
+  color: var(--highlight-color) !important;
 }
 
 .separator {
-  color: white; /* Set separator color to white */
+  color: var(--text-light-color); /* Set separator color to light text color */
 }
 
 /* Responsive adjustments */

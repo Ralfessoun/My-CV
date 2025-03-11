@@ -6,6 +6,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Skillexp from './components/Skillexp';
+import Services from './components/Services';
 import './App.css';
 
 
@@ -23,6 +24,9 @@ function App() {
         <Skillexp />
       </motion.div>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 2 }}>
+        <Services />
+      </motion.div>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 2.5 }}>
         <Contact />
       </motion.div>
       <Footer />

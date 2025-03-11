@@ -1,22 +1,20 @@
 .skills {
   padding: 50px;
-  background-color: white;
-  color: #333;
+  background-color: var(--background-color); /* Use background color variable */
   text-align: center;
 }
 
 .skills h2 {
   font-size: 2em;
   margin-bottom: 20px;
-  color: black;
+  color: var(--text-color); /* Use text color variable */
 }
 
 .skills h3 {
-  color: black;
+  color: var(--text-color); /* Use text color variable */
 }
 
 .skills-list {
-
   flex: 2;
   display: flex;
   flex-direction: column;
@@ -30,7 +28,7 @@
 }
 
 .skill-bar {
-  background-color: #ddd;
+  background-color: var(--highlight-color); /* Use card shadow color variable */
   border-radius: 5px;
   overflow: hidden;
   width: 100%;
@@ -38,9 +36,9 @@
 }
 
 .skill-level {
-    height: 10px;
-    background-color: #007bff;
-    border-radius: 5px;
+  height: 10px;
+  background-color: var(--primary-color); /* Use primary color variable */
+  border-radius: 5px;
 }
 
 @media (max-width: 600px) {
